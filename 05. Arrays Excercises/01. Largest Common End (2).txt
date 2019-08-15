@@ -1,0 +1,50 @@
+using System;
+using System.Linq;
+
+namespace _01._Largest_Common_End
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] firstArray = Console.ReadLine().Split(' ').ToArray();
+            string[] secondArray = Console.ReadLine().Split(' ').ToArray();
+            int minLength = Math.Min(firstArray.Length, secondArray.Length);
+            int maxLeftCounter = 0;
+            int maxRightCounter = 0;
+
+            for (int i = 0; i < minLength; i++)
+            {
+                if (firstArray[i] == secondArray[i])
+                {
+                    maxLeftCounter++;
+                }
+                else
+                {
+                    break;
+                }
+            }
+
+            for (int i = 0; i < minLength; i++)
+            {
+                if (firstArray[firstArray.Length - i - 1] == secondArray[secondArray.Length - i - 1])
+                {
+                    maxRightCounter++;
+                }
+                else
+                {
+                    break;
+                }
+            }
+
+            if (maxLeftCounter > maxRightCounter)
+            {
+                Console.WriteLine(maxLeftCounter);
+            }
+            else
+            {
+                Console.WriteLine(maxRightCounter);
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+﻿using System;
+
+namespace CountTheNumbers
+{
+    class Program
+    {
+        static void Main()
+        {
+            int countOfTheNumbers = 0;
+            try
+            {
+                while (true)
+                {
+                    int number = int.Parse(Console.ReadLine());
+                    countOfTheNumbers++;
+                }
+            }
+            catch
+            {
+            }
+
+            Console.WriteLine(countOfTheNumbers);
+        }
+    }
+}

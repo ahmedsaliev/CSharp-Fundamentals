@@ -1,0 +1,41 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace _07._Bomb_Numbers
+{
+    class Program
+    {
+        static void Main()
+        {
+            var numbers = Console.ReadLine()
+                .Split(' ')
+                .Select(int.Parse)
+                .ToList();
+
+            var numberAndPower = Console.ReadLine()
+                .Split(' ')
+                .Select(int.Parse)
+                .ToList();
+
+            int bombNumber = numberAndPower[0];
+            int power = numberAndPower[1];
+
+            for (var i = 0; i < numbers.Count; i++)
+            {
+                if (numbers[i] == bombNumber)
+                {
+                    int left = Math.Max(i - power, 0);
+
+                    int right = Math.Min(i + power, numbers.Count - 1);
+
+                    int lenght = right - left + 1;
+                    numbers.RemoveRange(left, lenght);
+                    i = 0;
+                }
+            }
+
+            Console.WriteLine(numbers.Sum());
+        }
+    }
+}

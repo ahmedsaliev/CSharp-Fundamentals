@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="C:\Users\Есма\Desktop\C# Projects\05. Programming-Fundamentals-Methods-Debugging-and-Troubleshooting-Code-Lab\13. Factorial.cs" Link="13. Factorial.cs" />
+  </ItemGroup>
+
+</Project>

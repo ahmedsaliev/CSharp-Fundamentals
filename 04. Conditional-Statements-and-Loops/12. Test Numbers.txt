@@ -1,0 +1,36 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{	
+		int n = int.Parse(Console.ReadLine());
+		int m = int.Parse(Console.ReadLine());
+		int maxSum = int.Parse(Console.ReadLine());
+		int sum = 0;
+		int counter = 0;
+		
+		for (int i = n; i > 0; i--)
+		{
+			if (sum > maxSum) break;
+			for (int j = 1; j <= m; j++)
+			{
+				counter++;				
+				sum = sum + 3 * i * j;
+				if (sum >= maxSum)
+				{
+					Console.WriteLine("{0} combinations", counter);
+					Console.WriteLine("Sum: {0} >= {1}", sum, maxSum);
+					break;
+				}
+			}
+		}
+		
+		if (sum < maxSum)
+		{
+			Console.WriteLine("{0} combinations", counter);
+			Console.WriteLine("Sum: {0}", sum);
+		}
+		
+	}
+}

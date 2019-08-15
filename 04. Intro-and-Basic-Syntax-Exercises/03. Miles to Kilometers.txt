@@ -1,0 +1,14 @@
+using System;
+
+namespace MilesToKilometres
+{
+    class Program
+    {
+        static void Main()
+        {
+            double a = double.Parse(Console.ReadLine());
+            
+            Console.WriteLine("{0:f2}", a * 1.60934);
+        }
+    }
+}

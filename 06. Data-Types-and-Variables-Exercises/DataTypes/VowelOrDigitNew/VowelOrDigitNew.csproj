@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="C:\Users\Есма\Desktop\C# Projects\03. Data-Types-and-Variables-Exercises\13. Vowel or Digit %282%29.cs" Link="13. Vowel or Digit %282%29.cs" />
+  </ItemGroup>
+
+</Project>

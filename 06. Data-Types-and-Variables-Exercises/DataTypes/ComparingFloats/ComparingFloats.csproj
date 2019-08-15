@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="C:\Users\Есма\Desktop\C# Projects\03. Data-Types-and-Variables-Exercises\16. Comparing Floats.cs" Link="16. Comparing Floats.cs" />
+  </ItemGroup>
+
+</Project>

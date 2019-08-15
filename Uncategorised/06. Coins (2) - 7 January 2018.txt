@@ -1,0 +1,23 @@
+using System;
+
+namespace _06._Coins_Exam_07_January_2018__2_
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double change = double.Parse(Console.ReadLine());
+            int stotinki = (int)(change * 100);
+            int counter = 0;
+            counter = counter + (stotinki / 200); stotinki = stotinki % 200;
+            counter = counter + (stotinki / 100); stotinki = stotinki % 100;
+            counter = counter + (stotinki / 50); stotinki = stotinki % 50;
+            counter = counter + (stotinki / 20); stotinki = stotinki % 20;
+            counter = counter + (stotinki / 10); stotinki = stotinki % 10;
+            counter = counter + (stotinki / 5); stotinki = stotinki % 5;
+            counter = counter + (stotinki / 2); stotinki = stotinki % 2;
+            counter = counter + (stotinki / 1); stotinki = stotinki % 1;
+            Console.WriteLine(counter); ;
+        }
+    }
+}

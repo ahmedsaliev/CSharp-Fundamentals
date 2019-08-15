@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="C:\Users\Есма\Desktop\C# Projects\06. Arrays\07. Max Sequence of Increasing Elements.cs" Link="07. Max Sequence of Increasing Elements.cs" />
+  </ItemGroup>
+
+</Project>

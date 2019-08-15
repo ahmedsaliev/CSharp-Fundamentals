@@ -1,0 +1,63 @@
+using System;
+
+namespace HotelDiscounts
+{
+    class Program
+    {
+        static void Main()
+        {
+            string month = Console.ReadLine();
+            int nigthsCount = int.Parse(Console.ReadLine());
+
+            double studioPrice = 0;
+            double doublePrice = 0;
+            double suitePrice = 0;
+            double discount = 0;
+
+            if (month == "May" || month == "October")
+            {
+                studioPrice = 50;
+                doublePrice = 65;
+                suitePrice = 75;
+            }
+            else if (month == "June" || month == "September")
+            {
+                studioPrice = 60;
+                doublePrice = 72;
+                suitePrice = 82;
+            }
+            else if (month == "July" || month == "August" || month == "December")
+            {
+                studioPrice = 68;
+                doublePrice = 77;
+                suitePrice = 89;
+            }
+
+            if ((month == "May" || month == "October") && nigthsCount > 7)
+            {
+                studioPrice = studioPrice * 0.95;
+            }
+            else if ((month == "June" || month == "September") && nigthsCount > 14)
+            {
+                doublePrice = doublePrice * 0.90;
+            }
+            else if ((month == "July" || month == "August" || month == "December") && nigthsCount > 14)
+            {
+                suitePrice = suitePrice * 0.85;
+            }
+
+            if ((month == "October" || month == "September") && nigthsCount > 7)
+            {
+                Console.WriteLine("Studio: {0:f2} lv.", studioPrice * (nigthsCount - 1));
+            }
+            else
+            {
+                Console.WriteLine("Studio: {0:f2} lv.", studioPrice * nigthsCount);
+
+            }
+
+            Console.WriteLine("Double: {0:f2} lv.", doublePrice * nigthsCount);
+            Console.WriteLine("Suite: {0:f2} lv.", suitePrice * nigthsCount);
+        }
+    }
+}

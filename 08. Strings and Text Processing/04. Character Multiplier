@@ -1,0 +1,32 @@
+using System;
+using System.Linq;
+
+namespace Problem_04._Character_Multiplier
+{
+    class Program
+    {
+        static void Main()
+        {
+            string[] line = Console.ReadLine().Split();
+            string str1 = line[0];
+            string str2 = line[1];
+            Console.WriteLine(SumOfCodes(str1, str2));
+        }
+
+        static int SumOfCodes(string str1, string str2)
+        {
+            int sum = 0;
+            int length = Math.Min(str1.Length, str2.Length);
+            for (var i = 0; i < length; i++)
+            {
+                sum += (int)str1[i] * (int)str2[i];
+            }
+            string rest = str1.Remove(0, length) + str2.Remove(0, length);
+            for (var i = 0; i < rest.Length; i++)
+            {
+                sum += (int)rest[i];
+            }
+            return sum;
+        }
+    }
+}

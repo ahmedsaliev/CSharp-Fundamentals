@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="C:\Users\Есма\Desktop\C# Projects\03. Data-Types-and-Variables-Exercises\11. Convert Speed Units.cs" Link="11. Convert Speed Units.cs" />
+  </ItemGroup>
+
+</Project>

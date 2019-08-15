@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace ListWithValyo
+{
+    class Program
+    {
+        static void Main()
+        {
+            // Readign from the console
+            List<int> numbers = Console.ReadLine()
+            .Split()
+            .Select(int.Parse)
+            .ToList();
+
+            // Empty list for the result
+            List<int> result = new List<int>();
+
+            // Appending all non-negatives to the result list
+            for (int i = 0; i < numbers.Count; i++)
+            {
+                if (numbers[i] >= 0)
+                {
+                    result.Add(numbers[i]);
+                }
+            }
+
+            // Reversing the result list
+            result.Reverse();
+
+            // Printing result list
+            if (result.Count == 0)
+            {
+                Console.WriteLine("empty");
+            }
+            else
+            {
+            Console.WriteLine(string.Join(" ", result));
+            }
+        }
+    }
+}

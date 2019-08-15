@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="C:\Users\Есма\Desktop\C# Projects\03. Data-Types-and-Variables-Exercises\15. Fast Prime Checker - Refactor.cs" Link="15. Fast Prime Checker - Refactor.cs" />
+  </ItemGroup>
+
+</Project>

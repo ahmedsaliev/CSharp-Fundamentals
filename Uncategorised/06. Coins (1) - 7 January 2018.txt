@@ -1,0 +1,25 @@
+using System;
+
+namespace _06._Coins_Exam_07_January_2018
+{
+    class Program
+    {
+        static void Main()
+        {
+            double change = double.Parse(Console.ReadLine());
+            int stotinki = (int)(change * 100);
+            int[] coins = { 200, 100, 50, 20, 10, 5, 2, 1 };
+            int counter = 0;
+
+            for (int i = 0; i < coins.Length; i++)
+            {
+                if (stotinki >= coins[i])
+                {
+                    counter = counter + (stotinki / coins[i]);
+                    stotinki = stotinki % coins[i];
+                }
+            }
+            Console.WriteLine(counter);
+        }
+    }
+}
